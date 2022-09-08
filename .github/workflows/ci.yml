@@ -1,0 +1,15 @@
+name: notify
+on:
+  schedule:
+    - cron: 0/5 * * * *
+jobs:
+  ci:
+    name: notify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Yarn
+        run: npm i -g yarn
+      - name: notify
+        run: yarn start
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
