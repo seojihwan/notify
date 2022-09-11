@@ -4,6 +4,7 @@ on:
     - cron: '* */2 * * *'
   push:
     branches:
+      - main
       - 'test/notify'
 jobs:
   ci:
