@@ -1,7 +1,7 @@
 name: notify
 on:
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '* */2 * * *'
   push:
     branches:
       - 'test/notify'
@@ -16,4 +16,5 @@ jobs:
       - name: notify
         run: yarn start
         env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          AUTH_USERNAME: ${{ secrets.AUTH_USERNAME }}
+          AUTH_PASSWORD: ${{ secrets.AUTH_PASSWORD }}

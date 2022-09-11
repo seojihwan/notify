@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@types/nodemailer", "npm:6.4.5"],\
             ["@typescript-eslint/eslint-plugin", "virtual:87340dbcd886a9c276b5abd08d85018990a9b69dd71b7a95c361c703117cbbf1a4727e0f47189fe501df0068248282cc49bf223d5f93fa4ee929be0d4499630f#npm:5.36.2"],\
             ["@typescript-eslint/parser", "virtual:87340dbcd886a9c276b5abd08d85018990a9b69dd71b7a95c361c703117cbbf1a4727e0f47189fe501df0068248282cc49bf223d5f93fa4ee929be0d4499630f#npm:5.36.2"],\
             ["@yarnpkg/sdks", "npm:3.0.0-rc.18"],\
@@ -46,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-n", "virtual:87340dbcd886a9c276b5abd08d85018990a9b69dd71b7a95c361c703117cbbf1a4727e0f47189fe501df0068248282cc49bf223d5f93fa4ee929be0d4499630f#npm:15.2.5"],\
             ["eslint-plugin-prettier", "virtual:87340dbcd886a9c276b5abd08d85018990a9b69dd71b7a95c361c703117cbbf1a4727e0f47189fe501df0068248282cc49bf223d5f93fa4ee929be0d4499630f#npm:4.2.1"],\
             ["eslint-plugin-promise", "virtual:87340dbcd886a9c276b5abd08d85018990a9b69dd71b7a95c361c703117cbbf1a4727e0f47189fe501df0068248282cc49bf223d5f93fa4ee929be0d4499630f#npm:6.0.1"],\
+            ["nodemailer", "npm:6.7.8"],\
             ["nodemon", "npm:2.0.19"],\
             ["prettier", "npm:2.7.1"],\
             ["ts-node", "virtual:87340dbcd886a9c276b5abd08d85018990a9b69dd71b7a95c361c703117cbbf1a4727e0f47189fe501df0068248282cc49bf223d5f93fa4ee929be0d4499630f#npm:10.9.1"],\
@@ -358,6 +360,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["npm:18.7.16", {\
           "packageLocation": "./.yarn/cache/@types-node-npm-18.7.16-f7271d701b-01a3d35c76.zip/node_modules/@types/node/",\
           "packageDependencies": [\
+            ["@types/node", "npm:18.7.16"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/nodemailer", [\
+        ["npm:6.4.5", {\
+          "packageLocation": "./.yarn/cache/@types-nodemailer-npm-6.4.5-7ffbb8e061-ecbe34a6eb.zip/node_modules/@types/nodemailer/",\
+          "packageDependencies": [\
+            ["@types/nodemailer", "npm:6.4.5"],\
             ["@types/node", "npm:18.7.16"]\
           ],\
           "linkType": "HARD"\
@@ -3568,6 +3580,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["nodemailer", [\
+        ["npm:6.7.8", {\
+          "packageLocation": "./.yarn/cache/nodemailer-npm-6.7.8-38163d624e-92d4a1d488.zip/node_modules/nodemailer/",\
+          "packageDependencies": [\
+            ["nodemailer", "npm:6.7.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["nodemon", [\
         ["npm:2.0.19", {\
           "packageLocation": "./.yarn/unplugged/nodemon-npm-2.0.19-5d6fa595c6/node_modules/nodemon/",\
@@ -3628,6 +3649,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["notify", "workspace:."],\
+            ["@types/nodemailer", "npm:6.4.5"],\
             ["@typescript-eslint/eslint-plugin", "virtual:87340dbcd886a9c276b5abd08d85018990a9b69dd71b7a95c361c703117cbbf1a4727e0f47189fe501df0068248282cc49bf223d5f93fa4ee929be0d4499630f#npm:5.36.2"],\
             ["@typescript-eslint/parser", "virtual:87340dbcd886a9c276b5abd08d85018990a9b69dd71b7a95c361c703117cbbf1a4727e0f47189fe501df0068248282cc49bf223d5f93fa4ee929be0d4499630f#npm:5.36.2"],\
             ["@yarnpkg/sdks", "npm:3.0.0-rc.18"],\
@@ -3641,6 +3663,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-n", "virtual:87340dbcd886a9c276b5abd08d85018990a9b69dd71b7a95c361c703117cbbf1a4727e0f47189fe501df0068248282cc49bf223d5f93fa4ee929be0d4499630f#npm:15.2.5"],\
             ["eslint-plugin-prettier", "virtual:87340dbcd886a9c276b5abd08d85018990a9b69dd71b7a95c361c703117cbbf1a4727e0f47189fe501df0068248282cc49bf223d5f93fa4ee929be0d4499630f#npm:4.2.1"],\
             ["eslint-plugin-promise", "virtual:87340dbcd886a9c276b5abd08d85018990a9b69dd71b7a95c361c703117cbbf1a4727e0f47189fe501df0068248282cc49bf223d5f93fa4ee929be0d4499630f#npm:6.0.1"],\
+            ["nodemailer", "npm:6.7.8"],\
             ["nodemon", "npm:2.0.19"],\
             ["prettier", "npm:2.7.1"],\
             ["ts-node", "virtual:87340dbcd886a9c276b5abd08d85018990a9b69dd71b7a95c361c703117cbbf1a4727e0f47189fe501df0068248282cc49bf223d5f93fa4ee929be0d4499630f#npm:10.9.1"],\
